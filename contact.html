@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <!-- <meta name="viewport" content="width=device-width"> -->
+    <title>Skontaktuj się z nami</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="scripts.js"></script>
+     <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/business-frontpage.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<style>
+
+	</style>
+	<script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" data-auto-a11y="true">
+	</script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital@1&display=swap" rel="stylesheet"> 
+
+
+</head>
+<body>
+     <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">LAS TO MÓJ DOM</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Główna <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="las.html"><i class="fas fa-music"></i> Dźwięki<span class="sr-only">(current)</span>
+            </a>
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html"><i class="fas fa-id-card"></i> Kontakt</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+
+<div class="wrapper">
+  <h2>Skontaktuj się z nami</h2>
+  <div id="error_message"></div>
+  <form id="myform" onsubmit="return validate();">
+    <div class="input_field">
+        <input type="text" placeholder="Imię" id="imie">
+    </div>
+    <div class="input_field">
+        <input type="text" placeholder="Nazwisko" id="nazwisko">
+    </div>
+    <div class="input_field">
+        <input type="text" placeholder="Tel." id="tel">
+    </div>
+    <div class="input_field">
+        <input type="text" placeholder="Email" id="email">
+    </div>
+    <div class="input_field">
+        <textarea placeholder="Treść" id="tresc"></textarea>
+    </div>
+    <div class="btn">
+        <input type="submit">
+    </div>
+  </form>
+
+</div>
+
+
+
+
+
+
+</body>
+</html>

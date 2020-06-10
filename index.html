@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Strona w ramach projektu</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/business-frontpage.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+<script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" data-auto-a11y="true">
+</script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital@1&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">LAS TO MÓJ DOM</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Główna <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="las.html"><i class="fas fa-music"></i> Dźwięki <span class="sr-only">(current)</span>
+            </a>
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html"><i class="fas fa-id-card"></i> Kontakt</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="bg-primary py-5 mb-5">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-lg-12">
+          <h1 class="display-4 text-white mt-5 mb-2">Zielony Dom</h1>
+          <p class="lead mb-5 text-white-50">Las jest miejscem towarzyszącym rozwoju naszej planety od dawien dawna. 
+		  Las to dom nie tylko dla zwierząt ale i dla ludzi. Choć ciężko w to uwierzyć dalej istnieją rodziny mieszkające w lesie zdala od cywilizacji. 
+		  Obacnie las to miejsce odpoczynku i źródło surowca jakim jest drewno.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Slider -->
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="img/1.jpg" style="width:100%">
+  <img class="mySlides" src="img/16.jpg" style="width:100%">
+  <img class="mySlides" src="img/3.jpg" style="width:100%">
+  
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    
+    <!-- /.row -->
+
+    <div class="row">
+      <div class="col-md-4 mb-5">
+        <div class="card h-100">
+          <img class="card-img-top" src="img/brzoza.jpg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Brzoza</h4>
+            <p class="card-text"> Brzoza to najciekawsze drzewo jakie można spotkać wędrując po lesie. Dzięki charakterystucznemu ubarwieniu łatwo ją rozpoznać. 
+			Drzewo to ma wiele do zaoferowania, w sezonie można zbierać z niej sok, a jej kora rez świetną naturalna podpałką na ognisko.</p>
+          </div>
+          <div class="card-footer">
+            <a href="https://pl.wikipedia.org/wiki/Brzoza" target="_blank" class="btn btn-primary">Czytaj więcej!</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-5">
+        <div class="card h-100">
+          <img class="card-img-top" src="img/wilk.jpg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Wilk</h4>
+            <p class="card-text">Wilk jest zwierzęciem stadnym, stado wilków to tak zwana wataha. 
+			Wilki są wspaniałymi myśliwymi potrafią szarżować z prędkością 50 km/h. Widząc  ślady wilka ciężko jest określić ile osobników  szło ta drogą gdyż często chodza one ślad wślad za sobą</p>
+          </div>
+          <div class="card-footer">
+            <a href="https://pl.wikipedia.org/wiki/Wilk" target="_blank" class="btn btn-primary">Czytaj więcej!</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-5">
+        <div class="card h-100">
+          <img class="card-img-top" src="img/szlak.jpg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Szlaki</h4>
+            <p class="card-text">Specjanie wyznaczona droga dla początkującycych turysztów. Szlaki w zależności od poziomu trudności są oznaczone kolorami.Pamiętaj prawdziwi turyści wyznaczają własne szlaki!</p>
+          </div>
+          <div class="card-footer">
+            <a href="https://pl.wikipedia.org/wiki/Szlak_turystyczny" target="_blank" class="btn btn-primary">Czytaj więcej!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
